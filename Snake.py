@@ -46,3 +46,14 @@ def move():
 def inside(head):
     """Return True if head inside boundaries."""
     return -200 < head.x < 190 and -200 < head.y < 190
+
+setup(420, 420, 370, 0)
+hideturtle()
+tracer(False)
+listen()
+onkey(lambda: change(10, 0), 'Right')
+onkey(lambda: change(-10, 0), 'Left')
+onkey(lambda: change(0, 10), 'Up')
+onkey(lambda: change(0, -10), 'Down')
+move()
+done()
