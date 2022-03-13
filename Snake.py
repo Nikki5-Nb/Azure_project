@@ -42,3 +42,7 @@ def move():
     square(food.x, food.y, 9, 'green')
     update()
     ontimer(move, 100)
+
+def inside(head):
+    """Return True if head inside boundaries."""
+    return -200 < head.x < 190 and -200 < head.y < 190
